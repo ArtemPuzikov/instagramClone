@@ -1,0 +1,16 @@
+spring:
+  liquibase:
+    enabled: true
+    change-log: classpath*:db/changelog/db.changelog-master.yaml
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/instagramclone
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
+    database: postgresql
+
